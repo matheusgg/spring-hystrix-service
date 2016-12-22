@@ -1,6 +1,7 @@
 spring:
-  application:
-    name: spring-hystrix-service
+  application.name: spring-hystrix-service
   cloud:
     config:
+      enabled: true
       uri: http://localhost:8888
+      fail-fast: true
