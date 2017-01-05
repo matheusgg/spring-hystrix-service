@@ -16,6 +16,11 @@ public class HystrixServiceController {
 		return "Hello!";
 	}
 
+	@RequestMapping("/hi")
+	public String hi() {
+		return "Hi by HystrixServiceController!";
+	}
+
 	@RequestMapping(value = "/simulate")
 	public String simulate() {
 		throw new RuntimeException("HystrixServiceController Simulation Exception");
